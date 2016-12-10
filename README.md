@@ -1,1 +1,1 @@
-# NorthEast Contracting 
+# Northeast General Contracting inc.
