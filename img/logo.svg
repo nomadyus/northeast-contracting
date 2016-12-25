@@ -12,9 +12,9 @@
    id="svg3336"
    version="1.1"
    inkscape:version="0.91 r13725"
-   width="350"
-   height="350"
-   viewBox="0 0 350 350"
+   width="320"
+   height="320"
+   viewBox="0 0 320 320"
    sodipodi:docname="logo.svg"
    inkscape:export-filename="C:\git\northeast-contracting\img\logo.png"
    inkscape:export-xdpi="90"
@@ -27,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -83,9 +83,9 @@
      inkscape:window-height="745"
      id="namedview3338"
      showgrid="false"
-     inkscape:zoom="21.232144"
-     inkscape:cx="49.522958"
-     inkscape:cy="65.731924"
+     inkscape:zoom="1.7812499"
+     inkscape:cx="175"
+     inkscape:cy="197.41481"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -99,7 +99,7 @@
   </sodipodi:namedview>
   <g
      id="g5519"
-     transform="translate(8.8915909,0)">
+     transform="translate(-6.1084091,-15.272238)">
     <path
        sodipodi:nodetypes="ccccccc"
        inkscape:connector-curvature="0"
