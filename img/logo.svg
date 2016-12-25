@@ -15,7 +15,10 @@
    width="350"
    height="350"
    viewBox="0 0 350 350"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="C:\git\northeast-contracting\img\logo.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <metadata
      id="metadata3342">
     <rdf:RDF>
@@ -24,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -80,8 +83,8 @@
      inkscape:window-height="745"
      id="namedview3338"
      showgrid="false"
-     inkscape:zoom="9.2125912"
-     inkscape:cx="57.553235"
+     inkscape:zoom="21.232144"
+     inkscape:cx="49.522958"
      inkscape:cy="65.731924"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
