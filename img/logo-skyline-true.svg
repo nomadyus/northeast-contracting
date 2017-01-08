@@ -15,7 +15,7 @@
    width="800"
    height="320"
    viewBox="0 0 800 320"
-   sodipodi:docname="logo-skyline.svg">
+   sodipodi:docname="logo-skyline-true.svg">
   <metadata
      id="metadata3342">
     <rdf:RDF>
@@ -485,46 +485,11 @@
      d="m 383.0805,111.7236 c -1.39412,4e-5 -2.52427,0.69504 -2.52435,1.5524 9e-5,0.85734 1.13024,1.55235 2.52435,1.55239 11.13322,-0.0786 22.62239,-0.23397 32.57542,0 1.39412,-3e-5 2.52428,-0.69504 2.52436,-1.55239 -7e-5,-0.85736 -1.13023,-1.55237 -2.52436,-1.5524 -11.22819,-0.66484 -22.97109,-0.28541 -32.57542,0 z"
      style="opacity:1;fill:#6f82ae;fill-opacity:1;stroke:#6f82ae;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     sodipodi:nodetypes="cccccc"
-     inkscape:connector-curvature="0"
-     id="rect9684"
-     d="m 294.50203,107.11627 0,24.11524 -0.01,0.8125 24.75194,-24.93946 -0.625,0.0117 z"
-     style="opacity:1;fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <text
-     transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"
-     sodipodi:linespacing="125%"
-     id="text9973"
-     y="-307.01852"
-     x="-152.23958"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:45px;line-height:125%;font-family:'Microsoft YaHei';-inkscape-font-specification:'Microsoft YaHei Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-     xml:space="preserve"><tspan
-       y="-307.01852"
-       x="-152.23958"
-       id="tspan9975"
-       sodipodi:role="line">N</tspan></text>
-  <path
-     inkscape:connector-curvature="0"
-     id="path5603"
-     d="m 278.33254,112.14403 0,-11.54193 11.46654,0 11.46653,0 -1.89691,1.90925 c -1.0433,1.05008 -3.39049,3.41411 -5.21598,5.25339 -1.82549,1.83927 -4.66436,4.69958 -6.30859,6.35624 -1.64423,1.65665 -4.45697,4.4865 -6.25055,6.28854 l -3.26104,3.27643 0,-11.54192 z"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
      inkscape:connector-curvature="0"
      id="rect5615-4-3"
      d="m 325.05433,288.14232 0,31.34888 2.89949,-0.0506 0,-31.2983 z"
      style="opacity:0.98000004;fill:#515970;fill-opacity:1;fill-rule:nonzero;stroke:#515970;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      sodipodi:nodetypes="ccccc" />
-  <text
-     transform="matrix(0.70710678,0.70710678,0.70710678,-0.70710678,0,0)"
-     sodipodi:linespacing="125%"
-     id="text9973-7"
-     y="255.70844"
-     x="413.44736"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:45px;line-height:125%;font-family:'Microsoft YaHei';-inkscape-font-specification:'Microsoft YaHei Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-     xml:space="preserve"><tspan
-       y="255.70844"
-       x="413.44736"
-       id="tspan9975-4"
-       sodipodi:role="line">E</tspan></text>
   <path
      sodipodi:nodetypes="ccccc"
      inkscape:connector-curvature="0"
