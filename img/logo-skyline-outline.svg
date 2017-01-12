@@ -15,7 +15,10 @@
    width="800"
    height="320"
    viewBox="0 0 800 320"
-   sodipodi:docname="logo-skyline-outline.svg">
+   sodipodi:docname="logo-skyline-outline.svg"
+   inkscape:export-filename="C:\git\northeast-contracting\img\logo-skyline-outline.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <metadata
      id="metadata3342">
     <rdf:RDF>
@@ -24,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -77,8 +80,8 @@
      id="namedview3338"
      showgrid="false"
      inkscape:zoom="1.0804367"
-     inkscape:cx="397.62517"
-     inkscape:cy="190.84955"
+     inkscape:cx="399.8011"
+     inkscape:cy="159.72257"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -90,6 +93,11 @@
        type="xygrid"
        id="grid8093" />
   </sodipodi:namedview>
+  <path
+     style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.00309491;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 0.51775287,0.5015475 c 0.008,65.8407915 -0.003,132.8286125 -0.011,196.2928825 -0.005,42.96915 -0.006,84.34531 -0.004,122.70402 l 798.99545713,0 c 0,-96.40952 -0.015,-215.93358 -0.0175,-318.9969025 l -798.96437713,0 z"
+     id="path4381-9-3-9"
+     inkscape:connector-curvature="0" />
   <path
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#515970;stroke-width:1.00309491;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 0.51761801,0.50154748 C 0.52604285,66.342339 0.51435227,133.33016 0.50665472,196.79443 c -0.005369,42.96915 -0.006351,84.34531 -0.003666,122.70402 l 798.99546128,0 c 0,-96.40952 -0.015,-215.93358 -0.0175,-318.99690252 l -798.96437822,0 z"
