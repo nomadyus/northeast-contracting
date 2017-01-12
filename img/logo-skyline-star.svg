@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -76,9 +76,9 @@
      inkscape:window-height="745"
      id="namedview3338"
      showgrid="false"
-     inkscape:zoom="1.0795057"
-     inkscape:cx="362.32486"
-     inkscape:cy="159.72257"
+     inkscape:zoom="0.87279501"
+     inkscape:cx="320.74507"
+     inkscape:cy="58.906708"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -805,6 +805,21 @@
   <path
      id="path10225-8-3-2"
      d="m 53.785459,20.985393 1.17918,3.34097 3.53743,0 -2.75132,2.161793 0.98265,3.34095 -2.94794,-1.96526 -2.94794,1.96526 0.98265,-3.34095 -2.75132,-2.161793 3.53744,0 z"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path10225-13-58"
+     d="m 450.27755,12.117186 1.17918,3.340962 3.53743,0 -2.75132,2.161795 0.98265,3.340952 -2.94794,-1.965265 -2.94794,1.965265 0.98265,-3.340952 -2.75132,-2.161795 3.53744,0 z"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path10225-13-6"
+     d="m 329.97439,1.8054859 1.17918,3.340962 3.53743,0 -2.75132,2.161795 0.98265,3.3409521 -2.94794,-1.9652651 -2.94794,1.9652651 0.98265,-3.3409521 -2.75132,-2.161795 3.53744,0 z"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path10225-13-0"
+     d="m 639.32538,0.65974149 1.17918,3.34096201 3.53743,0 -2.75132,2.161795 0.98265,3.3409525 -2.94794,-1.9652655 -2.94794,1.9652655 0.98265,-3.3409525 -2.75132,-2.161795 3.53744,0 z"
      inkscape:connector-curvature="0"
      style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
