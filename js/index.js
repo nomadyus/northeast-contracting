@@ -8,7 +8,9 @@ function prepareLoadingScreen() {
 
 function showLoader() {
   $("#loader").css("display", "");
-  $("#loading-fill").animate({width: '75%'}, 1000);
+  $("#loading-fill").animate({
+    width: '75%'
+  }, 1000);
 }
 
 function hideLoader() {
