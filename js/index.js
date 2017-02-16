@@ -5,16 +5,22 @@ function prepareLoadingScreen() {
   hideMainContent();
   showLoader();
 }
-  
 
 function showLoader() {
-  $("").css("display", "none");
+  $("#loader").css("display", "");
+  $("#loading-fill").animate({width: '75%'}, 1000);
 }
 
 function hideLoader() {
-  
+  $("#loader").css("display", "none");
+  console.log("hide loader");
 }
 
 function hideMainContent() {
-  
+  $("#main").css("display", "none");
+}
+
+function showMainContent() {
+  $("#main").css("display", "");
+  $("#main").removeClass("dn")
 }
