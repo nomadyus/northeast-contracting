@@ -91,8 +91,9 @@ function slideLoaderOverlayDown() {
     $("#loader").addClass("overlay");
     $("#loader").addClass("slide-down");
     setTimeout(function(){
+      $("#loader").removeClass("dt");
       $("#loader").addClass("dn");
-    }, 1000);
+    }, 1750);
 }
 
 function showScrollArrow() {
