@@ -1,3 +1,91 @@
 .bg-color--logo-grey {
-  background-color: rgb(81,89,112)
+    background-color: rgb(81, 89, 112);
+}
+
+.color--logo-grey {
+    color: rgb(81, 89, 112);
+}
+
+.bg-color--logo-blue {
+    background-color: rgb(111, 159, 246);
+}
+
+.color--logo-blue {
+    color: rgb(111, 159, 246);
+}
+
+.bg-color--logo-light-grey {
+    background-color: rgb(169, 164, 159);
+}
+
+.color--logo-light-grey {
+    color: rgb(169, 164, 159);
+}
+
+.bg-color--logo-light-brown {
+    background-color: rgb(108, 105, 111);
+}
+
+.color--logo-light-brown {
+    color: rgb(108, 105, 111);
+}
+
+.bg-color--logo-border {
+    background-color: rgb(5, 11, 32);
+}
+
+.color--logo-grey {
+    color: rgb(81, 89, 112)
+}
+
+.zero-margin {
+  margin: 0;
+}
+
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo--top-right {
+    top: 2em;
+    left: 2em;
+}
+
+.overlay--overlap {
+    margin-top: -4em;
+    -webkit-transition: all 1s ease-in 1.5s;
+    -moz-transition: all 1s ease-in 1.5s;
+    -o-transition: all 1s ease-in 1.5s;
+    transition: all 1s ease-in 1.5s;
+}
+
+
+.slide-margin {
+    -webkit-transition: margin 1s ease-in 0.75s;
+    transition: margin 1s ease-in 0.75s;
+}
+
+.slide-down {
+  overflow: hidden;
+    transform: translateY(100vh);
+    -webkit-transition: transform 1s ease-in 0.75s;
+    -moz-transition: transform 1s ease-in 0.75s;
+    -o-transition: transform 1s ease-in 0.75s;
+    transition: transform 1s ease-in 0.75s;
+}
+
+.appear {
+    opacity: 1;
+}
+
+.vanish {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
 }
