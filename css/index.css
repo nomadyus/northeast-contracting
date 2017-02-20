@@ -39,7 +39,7 @@
 }
 
 .zero-margin {
-  margin: 0;
+    margin: 0;
 }
 
 .overlay {
@@ -57,7 +57,7 @@
 }
 
 .slide-down {
-  overflow: hidden;
+    overflow: hidden;
     transform: translateY(100vh);
     -webkit-transition: transform 1s ease-in 0.75s;
     -moz-transition: transform 1s ease-in 0.75s;
@@ -78,20 +78,44 @@
 }
 
 .page-content {
-  opacity: 1;
+    opacity: 1;
 }
 
-.full-page {
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  max-height: 100%;
+.full-size {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .overflow-hidden {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .scroll-y {
-  overflow-y: scroll;
+    overflow-y: scroll;
+}
+
+.first-layer {
+  z-index: 1000;
+}
+
+.second-layer {
+  z-index: 900;
+}
+
+.third-layer {
+  z-index: 800;
+}
+
+.fourth-layer {
+  z-index: 700;
+}
+
+.fifth-layer {
+  z-index: 600;
+}
+
+.sixth-layer {
+  z-index: 500;
 }
