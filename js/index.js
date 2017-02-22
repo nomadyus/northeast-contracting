@@ -15,8 +15,8 @@ function preLoadImages() {
 
 function loadImagesToPreloader(loader) {
     loader.loadFile("/img/pics/20150307_192018.jpg");
-    /*
     loader.loadFile("/img/pics/20150307_192056.jpg");
+    /*
     loader.loadFile("/img/pics/20150307_192111.jpg");
     loader.loadFile("/img/pics/20150307_192141.jpg");
     loader.loadFile("/img/pics/20150307_192316.jpg");
@@ -47,12 +47,13 @@ function loadImagesToPreloader(loader) {
 }
 
 function handlePreLoadComplete(event) {
-    console.log("target: " + event.target);
     console.log("type: " + event.type);
     animateProgressBarTo(100);
     hideLoadingBar();
     slideLoaderOverlayDown();
+    slideInHeader();
     showMainContent();
+
 }
 
 function handlePreLoadProgress(event) {
@@ -98,4 +99,9 @@ function slideLoaderOverlayDown() {
 
 function showScrollArrow() {
     $("#scroll-arrow").addClass("show");
+}
+
+function slideInHeader() {
+  $("#header").removeClass("out-of-frame");
+  $("#header").addClass("in-frame");
 }
