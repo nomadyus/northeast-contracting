@@ -1,3 +1,4 @@
+/* Colors */
 .bg-color--logo-grey {
     background-color: rgb(81, 89, 112);
 }
@@ -37,20 +38,8 @@
 .color--logo-grey {
     color: rgb(81, 89, 112)
 }
-
-.zero-margin {
-    margin: 0;
-}
-
-.overlay {
-    position: absolute;
-}
-
-.logo--top-right {
-    top: 2em;
-    left: 2em;
-}
-
+/* END */
+/* Transitions*/
 .slide-margin {
     -webkit-transition: margin 1s ease-in 0.75s;
     transition: margin 1s ease-in 0.75s;
@@ -65,10 +54,6 @@
     transition: transform 1s ease-in 0.75s;
 }
 
-.appear {
-    opacity: 1;
-}
-
 .vanish {
     opacity: 0;
     -webkit-transition: opacity 0.5s ease-in;
@@ -76,6 +61,32 @@
     -o-transition: opacity 0.5s ease-in;
     transition: opacity 0.5s ease-in;
 }
+
+.animate-header {
+  -webkit-transition: margin-top 1s ease 1s;
+  -moz-transition: margin-top 1s ease 1s;
+  -o-transition: margin-top 1s ease 1s;
+  transition: margin-top 1s ease 1s;
+}
+/* END */
+
+.zero-margin {
+    margin: 0;
+}
+
+.overlay {
+    position: absolute;
+}
+
+.logo--top-right {
+    top: 2em;
+    left: 2em;
+}
+
+.appear {
+    opacity: 1;
+}
+
 
 .page-content {
     opacity: 1;
@@ -96,6 +107,7 @@
     overflow-y: scroll;
 }
 
+/* Layers */
 .first-layer {
   z-index: 1000;
 }
@@ -118,4 +130,24 @@
 
 .sixth-layer {
   z-index: 500;
+}
+
+.mw-80 {
+  max-width: 80%;
+}
+
+.mw-60 {
+  max-width: 60%
+}
+
+.mw-40 {
+  max-width: 40%;
+}
+
+.out-of-top-frame {
+  margin-top: -100%;
+}
+
+.in-frame {
+  margin-top: 0%;
 }
