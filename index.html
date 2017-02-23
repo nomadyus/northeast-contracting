@@ -2,7 +2,7 @@
 <html itemtype="http://schema.org/WebPage" lang="en">
 
 <head>
-    <title>Northeast Contracting Inc.</title>
+    <title>Northeast General Contracting Inc.</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width">
@@ -11,16 +11,17 @@
     <meta name="description" content="northeast contracting">
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/tachyons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.css" />
     <script type="text/javascript" cdn-src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="https://code.createjs.com/preloadjs-0.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
-<body class="h-100 w-100 bg-white overlay">
-    <div id="main-container" class="h-100 w-100 bg-white full-size overlay overflow-hidden">
-
+<body class="h-100 w-100 bg-white absolute">
+    <div id="main-container" class="h-100 w-100 bg-white full-size absolute overflow-hidden">
         <div id="loader" class="w-100 vh-100 dt zero-margin bg-color--logo-grey full-page first-layer">
             <div id="loading-logo" class="dtc v-mid tc ph3 ph4-l">
                 <div class="tc center w-20-ns w-50">
@@ -33,47 +34,44 @@
                 </div>
             </div>
         </div>
-
-        <div id="pages" class="full-size scrolling-page second-layer">
-            <div id="header" class="w-100 h4-ns h3 overlay bb bw1 b--light-gray out-of-top-frame animate-header bg-white">
-                <div id="logo-container" class="w-100 h4-ns h3 mw-80">
-                    <div id="logo" class="h-100 pa3-ns pa1 pr2-ns pr2 fl dib mw-40">
-                        <img src="img/logo/logo.svg" class="h-100" alt="Northeast General Contracting Inc. Logo" />
-                    </div>
-                    <div id="logo-text" class="h-100 pv4-ns pv1 cf dib mw-60">
-                        <img src="img/logo/logo-text.svg" class="h-100" alt="Northeast General Contracting Inc. Logo" />
-                    </div>
+        <div id="header" class="w-100 h4-ns h3 fixed 0-out-of-top-frame 0-animate-header bg-white shadow-3">
+            <div id="logo-container" class="w-100 h4-ns h3 mw-80">
+                <div id="logo" class="h-100 pa3-ns pa1 pr2-ns pr2 fl dib mw-40">
+                    <img src="img/logo/logo.svg" class="h-100" alt="Northeast General Contracting Inc. Logo" />
                 </div>
-                <div id="nav-container" class="overlay">
-                    <div id="nav">
-                        <nav>
-                            <ul>
-                                <li>About</li>
-                                <li>Projects</li>
-                                <li>Contact</li>
-                            </ul>
-                        </nav>
-                    </div>
+                <div id="logo-text" class="h-100 pv4-ns pv1 cf dib mw-60">
+                    <img src="img/logo/logo-text.svg" class="h-100" alt="Northeast General Contracting Inc. Logo" />
                 </div>
             </div>
-            <div id="page-container" class=" bg-color--logo-blue">
-                <div id="top" class="section page full-size">
-                    <div class="page-content">
-
+            <div id="nav-container" class="absolute h-100 w-50 top--100 right--100">
+                <div id="nav" class="bg-color--logo-border white">
+                    <div id="nav-buttons" class="right-100">
+                        <div id="" class=""></div>
+                        <div id="" class=""></div>
+                        <div id="" class=""></div>
                     </div>
+                    <nav id="menu">
+                        <ul class="list pl0">
+                            <li>About</li>
+                            <li>Projects</li>
+                            <li>Contact</li>
+                        </ul>
+                    </nav>
                 </div>
-                <div id="middle" class="full-size  bg-color--logo-grey">
-                    <div class="page-content">
+            </div>
+        </div>
+        <div id="page-container" class="full-size scrolling-page second-layer">
+            <div id="first-section" class="page-content section full-size bg-color--logo-blue">
+                Slide 1
+            </div>
+            <div id="second-section" class="page-content section full-size  bg-color--logo-grey">
 
-                    </div>
-                </div>
-                <div id="bottom" class="e full-size  bg-color--logo-light-brown">
-                    <div class="page-content">
-                        <footer>
+            </div>
+            <div id="third-section" class="page-content section full-size  bg-color--logo-light-brown">
+                <footer>
+                    Footer
+                </footer>
 
-                        </footer>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
