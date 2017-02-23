@@ -56,6 +56,10 @@ function handlePreLoadComplete(event) {
 
 }
 
+function loadFullPageModule() {
+  $("fullpage").fullpage();
+}
+
 function handlePreLoadProgress(event) {
     animateProgressBarTo(Math.round(event.progress * 100));
 }
@@ -89,7 +93,7 @@ function showMainContent() {
 }
 
 function slideLoaderOverlayDown() {
-    $("#loader").addClass("overlay");
+    $("#loader").addClass("absolute");
     $("#loader").addClass("slide-down");
     setTimeout(function(){
       $("#loader").removeClass("dt");
