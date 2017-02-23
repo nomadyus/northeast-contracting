@@ -1,4 +1,5 @@
 /* Colors */
+
 .bg-color--logo-grey {
     background-color: rgb(81, 89, 112);
 }
@@ -38,8 +39,13 @@
 .color--logo-grey {
     color: rgb(81, 89, 112)
 }
+
+
 /* END */
+
+
 /* Transitions*/
+
 .slide-margin {
     -webkit-transition: margin 1s ease-in 0.75s;
     transition: margin 1s ease-in 0.75s;
@@ -63,19 +69,17 @@
 }
 
 .animate-header {
-  -webkit-transition: margin-top 1s ease 1s;
-  -moz-transition: margin-top 1s ease 1s;
-  -o-transition: margin-top 1s ease 1s;
-  transition: margin-top 1s ease 1s;
+    -webkit-transition: margin-top 1s ease 1s;
+    -moz-transition: margin-top 1s ease 1s;
+    -o-transition: margin-top 1s ease 1s;
+    transition: margin-top 1s ease 1s;
 }
+
+
 /* END */
 
 .zero-margin {
     margin: 0;
-}
-
-.overlay {
-    position: absolute;
 }
 
 .logo--top-right {
@@ -86,7 +90,6 @@
 .appear {
     opacity: 1;
 }
-
 
 .page-content {
     opacity: 1;
@@ -107,47 +110,73 @@
     overflow-y: scroll;
 }
 
+
 /* Layers */
+
 .first-layer {
-  z-index: 1000;
+    z-index: 1000;
 }
 
 .second-layer {
-  z-index: 900;
+    z-index: 900;
 }
 
 .third-layer {
-  z-index: 800;
+    z-index: 800;
 }
 
 .fourth-layer {
-  z-index: 700;
+    z-index: 700;
 }
 
 .fifth-layer {
-  z-index: 600;
+    z-index: 600;
 }
 
 .sixth-layer {
-  z-index: 500;
+    z-index: 500;
 }
 
 .mw-80 {
-  max-width: 80%;
+    max-width: 80%;
 }
 
 .mw-60 {
-  max-width: 60%
+    max-width: 60%
 }
 
 .mw-40 {
-  max-width: 40%;
+    max-width: 40%;
 }
 
-.out-of-top-frame {
-  margin-top: -100%;
+.top-100 {
+    top: 100%;
 }
 
-.in-frame {
-  margin-top: 0%;
+.top--100 {
+    top: -100%;
+}
+
+.bottom-100 {
+    bottom: 100%;
+}
+
+.bottom-100 {
+    bottom: 100%;
+}
+
+.right-100 {
+    right: 100%;
+}
+
+.right--100 {
+    right: -100%;
+}
+
+.left-100 {
+    left: 100%;
+}
+
+.left--100 {
+    left: -100%;
 }
