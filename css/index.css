@@ -191,17 +191,3 @@
     position: absolute;
     transform: translate(-50%, -50%);
 }
-
-.scrolling-page {
-  overflow: scroll;
-}
-
-.pages-content {
-  margin-top: 4rem;
-}
-
-@media screen and (min-width: 30em) {
-  .pages-content {
-    margin-top: 8rem;
-  }
-}
