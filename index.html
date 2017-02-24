@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
-<body class="h-100 w-100 bg-white absolute">
+<body class="h-100 w-100 bg-white">
     <div id="main-container" class="h-100 w-100 bg-white full-size absolute overflow-hidden">
         <div id="loader" class="w-100 vh-100 dt zero-margin bg-color--logo-grey full-page first-layer">
             <div id="loading-logo" class="dtc v-mid tc ph3 ph4-l">
@@ -34,46 +34,48 @@
                 </div>
             </div>
         </div>
+        <div id="navigation" class="bg-color--logo-border white h-100 w-50 first-layer absolute right-100">
+            <nav id="menu" class="absolute w-100 h-100 full-size">
+                <ul class="list pl0">
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
         <div id="header" class="w-100 h4-ns h3 fixed 0-out-of-top-frame 0-animate-header bg-white shadow-3">
             <div id="logo-container" class="w-100 h4-ns h3 mw-80">
                 <div id="logo" class="h-100 pa3-ns pa1 pr2-ns pr2 fl dib mw-40">
                     <img src="img/logo/logo.svg" class="h-100" alt="Northeast General Contracting Inc. Logo" />
                 </div>
-                <div id="logo-text" class="h-100 pv4-ns pv1 cf dib mw-60">
+                <div id="logo-text" class="h-100 pb3-ns pt4-ns pv1 cf dib mw-60">
                     <img src="img/logo/logo-text.svg" class="h-100" alt="Northeast General Contracting Inc. Logo" />
                 </div>
             </div>
-            <div id="nav-container" class="absolute h-100 w-50 top--100 right--100">
-                <div id="nav" class="bg-color--logo-border white">
-                    <div id="nav-buttons" class="right-100">
-                        <div id="" class=""></div>
-                        <div id="" class=""></div>
-                        <div id="" class=""></div>
-                    </div>
-                    <nav id="menu">
-                        <ul class="list pl0">
-                            <li>About</li>
-                            <li>Projects</li>
-                            <li>Contact</li>
-                        </ul>
-                    </nav>
+            <div id="nav-container" class="absolute bg-color--logo-border h-100 mw-20 w-100 top-0 right-0">
+                <div id="nav-button" class="pa3 w-100 center-block">
+                    <div id="" class="w-100 mv1 ph1 pv1 mb1 bg-white"></div>
+                    <div id="" class="w-100 mv2 ph1 pv1 bg-white"></div>
+                    <div id="" class="w-100 mv1 ph1 pv1 mt1 bg-white"></div>
                 </div>
             </div>
         </div>
-        <div id="page-container" class="full-size scrolling-page second-layer">
+        <div id="pages" class="full-size second-layer mt6">
             <div id="first-section" class="page-content section full-size bg-color--logo-blue">
-                Slide 1
-            </div>
-            <div id="second-section" class="page-content section full-size  bg-color--logo-grey">
 
             </div>
-            <div id="third-section" class="page-content section full-size  bg-color--logo-light-brown">
-                <footer>
-                    Footer
+            <div id="second-section" class="page-content section full-size bg-color--logo-grey">
+
+            </div>
+            <div id="third-section" class="page-content section full-size bg-color--logo-light-brown">
+
+            </div>
+            <div id="footer" class="bg-color--logo-border h-75 w-100">
+                <footer> This is the footer
                 </footer>
-
             </div>
         </div>
+    </div>
     </div>
 </body>
 
