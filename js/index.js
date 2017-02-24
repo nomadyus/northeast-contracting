@@ -1,6 +1,7 @@
 $(document).ready(prepareLoadingScreen);
 
 function prepareLoadingScreen() {
+    loadFullPageModule();
     hideMainContent();
     showLoader();
     preLoadImages();
@@ -57,7 +58,7 @@ function handlePreLoadComplete(event) {
 }
 
 function loadFullPageModule() {
-  $("fullpage").fullpage();
+    //$("#pages").fullpage();
 }
 
 function handlePreLoadProgress(event) {
@@ -89,15 +90,17 @@ function hideMainContent() {
 
 function showMainContent() {
     $("#main").css("display", "");
-    $("#main").removeClass("dn")
+    $("#main").removeClass("dn");
+    $("#main-content").removeClass("overflow-hidden");
 }
 
 function slideLoaderOverlayDown() {
     $("#loader").addClass("absolute");
     $("#loader").addClass("slide-down");
-    setTimeout(function(){
-      $("#loader").removeClass("dt");
-      $("#loader").addClass("dn");
+    setTimeout(function() {
+        $("#loader").removeClass("dt");
+        $("#loader").addClass("dn");
+        $("#main-container").removeClass("overflow-hidden");
     }, 1750);
 }
 
@@ -106,6 +109,6 @@ function showScrollArrow() {
 }
 
 function slideInHeader() {
-  $("#header").removeClass("out-of-frame");
-  $("#header").addClass("in-frame");
+    $("#header").removeClass("out-of-frame");
+    $("#header").addClass("in-frame");
 }
