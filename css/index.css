@@ -75,8 +75,32 @@
   transition: margin-top 1s ease 1s;
 }
 
+.animate-right {
+  -webkit-transition: right 0.5s ease;
+  -moz-transition: right 0.5s ease;
+  -o-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+}
 
-/* END */
+.rotate {
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.shrink {
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+
+a, a:active, a:visited {
+  outline: none;
+  border-style: none;
+}
 
 .zero-margin {
   margin: 0;
@@ -190,4 +214,20 @@
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
+}
+
+.menu--opened, .menu--opened:hover {
+  background-color: red;
+}
+
+.menu--opened .top-bar {
+  transform:  translateY(300%) rotate(-45deg);
+}
+
+.menu--opened .mid-bar {
+  transform: scale(0);
+}
+
+.menu--opened .bottom-bar {
+  transform:  translateY(-300%) rotate(45deg);
 }
