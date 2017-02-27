@@ -9,6 +9,6 @@ A simple HTML5, JS, and CSS site for the Northeast General Contracting Inc. comp
 ## Running in browser
 We are  able to run the site in browser for testing purposes using the command in the project directory:
 ```
-browser-sync start --server --files "*"
+browser-sync start --server --files "*, */*, */*/*"
 ```
 The above command will run a local mini-server of the directory and will provide a URL to view the site.
