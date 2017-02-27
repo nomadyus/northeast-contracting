@@ -1,43 +1,43 @@
 /* Colors */
 
 .bg-color--logo-grey {
-    background-color: rgb(81, 89, 112);
+  background-color: rgb(81, 89, 112);
 }
 
 .color--logo-grey {
-    color: rgb(81, 89, 112);
+  color: rgb(81, 89, 112);
 }
 
 .bg-color--logo-blue {
-    background-color: rgb(111, 159, 246);
+  background-color: rgb(111, 159, 246);
 }
 
 .color--logo-blue {
-    color: rgb(111, 159, 246);
+  color: rgb(111, 159, 246);
 }
 
 .bg-color--logo-light-grey {
-    background-color: rgb(169, 164, 159);
+  background-color: rgb(169, 164, 159);
 }
 
 .color--logo-light-grey {
-    color: rgb(169, 164, 159);
+  color: rgb(169, 164, 159);
 }
 
 .bg-color--logo-light-brown {
-    background-color: rgb(108, 105, 111);
+  background-color: rgb(108, 105, 111);
 }
 
 .color--logo-light-brown {
-    color: rgb(108, 105, 111);
+  color: rgb(108, 105, 111);
 }
 
 .bg-color--logo-border {
-    background-color: rgb(5, 11, 32);
+  background-color: rgb(5, 11, 32);
 }
 
 .color--logo-grey {
-    color: rgb(81, 89, 112)
+  color: rgb(81, 89, 112)
 }
 
 
@@ -47,147 +47,147 @@
 /* Transitions*/
 
 .slide-margin {
-    -webkit-transition: margin 1s ease-in 0.75s;
-    transition: margin 1s ease-in 0.75s;
+  -webkit-transition: margin 1s ease-in 0.75s;
+  transition: margin 1s ease-in 0.75s;
 }
 
 .slide-down {
-    overflow: hidden;
-    transform: translateY(100vh);
-    -webkit-transition: transform 1s ease-in 0.75s;
-    -moz-transition: transform 1s ease-in 0.75s;
-    -o-transition: transform 1s ease-in 0.75s;
-    transition: transform 1s ease-in 0.75s;
+  overflow: hidden;
+  transform: translateY(100vh);
+  -webkit-transition: transform 1s ease-in 0.75s;
+  -moz-transition: transform 1s ease-in 0.75s;
+  -o-transition: transform 1s ease-in 0.75s;
+  transition: transform 1s ease-in 0.75s;
 }
 
 .vanish {
-    opacity: 0;
-    -webkit-transition: opacity 0.5s ease-in;
-    -moz-transition: opacity 0.5s ease-in;
-    -o-transition: opacity 0.5s ease-in;
-    transition: opacity 0.5s ease-in;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 .animate-header {
-    -webkit-transition: margin-top 1s ease 1s;
-    -moz-transition: margin-top 1s ease 1s;
-    -o-transition: margin-top 1s ease 1s;
-    transition: margin-top 1s ease 1s;
+  -webkit-transition: margin-top 1s ease 1s;
+  -moz-transition: margin-top 1s ease 1s;
+  -o-transition: margin-top 1s ease 1s;
+  transition: margin-top 1s ease 1s;
 }
 
 
 /* END */
 
 .zero-margin {
-    margin: 0;
+  margin: 0;
 }
 
 .logo--top-right {
-    top: 2em;
-    left: 2em;
+  top: 2em;
+  left: 2em;
 }
 
 .appear {
-    opacity: 1;
+  opacity: 1;
 }
 
 .page-content {
-    opacity: 1;
+  opacity: 1;
 }
 
 .full-size {
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    max-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .overflow-hidden {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .scroll-y {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 
 /* Layers */
 
 .first-layer {
-    z-index: 1000;
+  z-index: 1000;
 }
 
 .second-layer {
-    z-index: 900;
+  z-index: 900;
 }
 
 .third-layer {
-    z-index: 800;
+  z-index: 800;
 }
 
 .fourth-layer {
-    z-index: 700;
+  z-index: 700;
 }
 
 .fifth-layer {
-    z-index: 600;
+  z-index: 600;
 }
 
 .sixth-layer {
-    z-index: 500;
+  z-index: 500;
 }
 
 .mw-80 {
-    max-width: 80%;
+  max-width: 80%;
 }
 
 .mw-60 {
-    max-width: 60%
+  max-width: 60%
 }
 
 .mw-40 {
-    max-width: 40%;
+  max-width: 40%;
 }
 
 .mw-20 {
-    max-width: 20%;
+  max-width: 20%;
 }
 
 .top-100 {
-    top: 100%;
+  top: 100%;
 }
 
 .top--100 {
-    top: -100%;
+  top: -100%;
 }
 
 .bottom-100 {
-    bottom: 100%;
+  bottom: 100%;
 }
 
 .bottom-100 {
-    bottom: 100%;
+  bottom: 100%;
 }
 
 .right-100 {
-    right: 100%;
+  right: 100%;
 }
 
 .right--100 {
-    right: -100%;
+  right: -100%;
 }
 
 .left-100 {
-    left: 100%;
+  left: 100%;
 }
 
 .left--100 {
-    left: -100%;
+  left: -100%;
 }
 
 .center-block {
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
