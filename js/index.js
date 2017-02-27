@@ -1,10 +1,12 @@
-$(document).ready(prepareLoadingScreen);
+(function(){
+  $(document).ready(preparePage);
+  var m = false;
 
-function prepareLoadingScreen() {
-    loadFullPageModule();
+function preparePage() {
     hideMainContent();
     showLoader();
     preLoadImages();
+    addEventListenerToElements();
 }
 
 function preLoadImages() {
@@ -57,8 +59,22 @@ function handlePreLoadComplete(event) {
 
 }
 
-function loadFullPageModule() {
-    //$("#pages").fullpage();
+function addEventListenerToElements() {
+    $("#nav-container").click(function(){
+      console.log(m);
+      if(!m) {
+      $("#navigation").addClass("right-0");
+      $("#navigation").removeClass("right--100");
+         $("#nav-container").addClass("menu--opened");
+      $("#nav-container").removeClass("dim");
+      } else{
+      $("#navigation").addClass("right--100");
+      $("#navigation").removeClass("right-0");
+         $("#nav-container").removeClass("menu--opened");
+      $("#nav-container").addClass("dim");
+      }
+      m = !m;
+    });
 }
 
 function handlePreLoadProgress(event) {
@@ -112,3 +128,4 @@ function slideInHeader() {
     $("#header").removeClass("out-of-frame");
     $("#header").addClass("in-frame");
 }
+           })();
