@@ -96,6 +96,15 @@
   transition: transform 0.5s ease;
 }
 
+/* Animations */
+@keyframes rotate-top-bar {
+  0%{transform:  translateY(300%) rotate(-45deg);}
+  100%{transform:  translateY(300%)rotate(315deg);}
+}
+@keyframes rotate-bottom-bar {
+  0%{transform: translateY(-300%)rotate(45deg);}
+  100%{transform: translateY(-300%)rotate(405deg);}
+}
 
 a, a:active, a:visited {
   outline: none;
@@ -230,4 +239,12 @@ a, a:active, a:visited {
 
 .menu--opened .bottom-bar {
   transform:  translateY(-300%) rotate(45deg);
+}
+
+.menu--opened:hover .top-bar {
+  animation: rotate-top-bar 0.7s linear forwards;
+}
+
+.menu--opened:hover .bottom-bar {
+  animation: rotate-bottom-bar 0.7s linear forwards;
 }
