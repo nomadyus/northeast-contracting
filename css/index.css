@@ -69,10 +69,10 @@
 }
 
 .animate-header {
-  -webkit-transition: margin-top 1s ease 1s;
-  -moz-transition: margin-top 1s ease 1s;
-  -o-transition: margin-top 1s ease 1s;
-  transition: margin-top 1s ease 1s;
+  -webkit-transition: margin-top 1s ease 0.6s;
+  -moz-transition: margin-top 1s ease 0.6s;
+  -o-transition: margin-top 1s ease 0.6s;
+  transition: margin-top 1s ease 0.6s;
 }
 
 .animate-right {
@@ -113,6 +113,10 @@ a, a:active, a:visited {
 
 .zero-margin {
   margin: 0;
+}
+
+.out-of-top-frame {
+  margin-top: -100%;
 }
 
 .logo--top-right {
@@ -242,9 +246,9 @@ a, a:active, a:visited {
 }
 
 .menu--opened:hover .top-bar {
-  animation: rotate-top-bar 0.7s linear forwards;
+  animation: rotate-top-bar 0.7s linear 0.5s;
 }
 
 .menu--opened:hover .bottom-bar {
-  animation: rotate-bottom-bar 0.7s linear forwards;
+  animation: rotate-bottom-bar 0.7s linear 0.5s;
 }
