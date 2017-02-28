@@ -2,9 +2,8 @@
   $(document).ready(preparePage);
 
   const preLoader = new createjs.LoadQueue();
-  var m = false;
-  var l = [];
   const IMG_DIR = "/img/pics/";
+  const g = false;
   const i = [
     "20150307_192018.jpg",
     "20150307_192056.jpg",
@@ -37,7 +36,9 @@
     "IMG_4652.JPG",
     "IMG_4654.JPG",
     */
-  ]
+  ];
+  var m = false;
+  var l = [];
 
   function preparePage() {
     hideMainContent();
@@ -77,7 +78,7 @@
 
   function handlePreLoadRender(event) {
     loadImageToGallery(event);
-    handlePreLoadProgress(event) 
+    handlePreLoadProgress(event)
   }
 
   function animateProgressBarTo(percentage) {
@@ -92,24 +93,29 @@
   }
 
   function loadImageToGallery(image) {
-    var wrap = $("<div class=\"gallery-images slide-horizontally relative dib ma0 pa0 w-50 w-third-m w-25-ns\"></li>");
-    var grid = $("<div class=\"aspect-ratio aspect-ratio--16x9\"></li>");
+    var wrap = $("<div class=\"gallery-images overflow-hidden relative dib ma0 pa0 w-50 w-third-m w-25-ns\"></li>");
+    var grid = $("<div class=\"aspect-ratio transform-horizontally aspect-ratio--16x9\"></li>");
     var main = $("<div class=\"db bg-center cover aspect-ratio--object\"></li>");
+    main.css('background-image', 'url("' + image.result.src + '")');
     wrap.append(grid.append(main));
 
-    /*
-    var randomInt = Math.round((Math.random() + 1).toFixed(2) * 100);
-    if (randomInt % 2 == 0) {
-      wrap.css('left', -randomInt + '%');
-    } else {
-      wrap.css('right', -randomInt + '%');
+    if (g) {
+      var randomInt = Math.round((Math.random() + 1).toFixed(2) * 100);
+      if (randomInt % 2 == 0) {
+        grid.css('transform', 'translateX(' + randomInt + '%)');
+      } else {
+        grid.css('transform', 'translateX(' + randomInt + '%');
+      }
+      var randomDuration = (Math.random() + 0.2).toFixed(2);
+      grid.attr('data-i', randomInt);
+      grid.attr('data-d', randomDuration);
+      grid.css('transition-duration', randomDuration + 's');
+      setTimeout(function () {
+        console.log(grid);
+        grid.css('transform', 'translateX(0%)');
+      }, randomDuration);
     }
-    var randomDuration = (Math.random() + 0.2).toFixed(2);
-    wrap.attr('data-i', randomInt);
-    wrap.attr('data-d', randomDuration);
-    wrap.css('transition-duration', randomDuration + 's');
-    */
-    main.css('background-image', 'url("' + image.result.src + '")');
+
     $("#project-gallery").append(wrap);
   }
 
