@@ -56,11 +56,11 @@
   transition: transform 1s ease-in 0.75s;
 }
 
-.slide-horizontally {
-  -webkit-transition: left 1s ease-in 0.75s, right 1s ease-in 0.75s;
-  -moz-transition: left 1s ease-in 0.75s, right 1s ease-in 0.75s;
-  -o-transition: left 1s ease-in 0.75s, right 1s ease-in 0.75s;
-  transition: left 1s ease-in 0.75s, right 1s ease-in 0.75s;
+.transform-horizontally {
+  -webkit-transition: transform 1s ease-in 2s;
+  -moz-transition: transform 1s ease-in 2s;
+  -o-transition: transform 1s ease-in 2s;
+  transition: transform 1s ease-in 2s;
 }
 
 .vanish {
