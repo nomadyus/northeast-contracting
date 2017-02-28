@@ -1,8 +1,43 @@
 (function () {
   $(document).ready(preparePage);
 
-  var preLoader = new createjs.LoadQueue();
+  const preLoader = new createjs.LoadQueue();
   var m = false;
+  var l = [];
+  const IMG_DIR = "/img/pics/";
+  const i = [
+    "20150307_192018.jpg",
+    "20150307_192056.jpg",
+    "20150307_192111.jpg",
+    "20150307_192141.jpg",
+    "20150307_192316.jpg",
+    "20150307_192352.jpg",
+    "20150307_192626.jpg",
+    "20150609_101307.jpg",
+    "20150609_101324.jpg",
+
+    "20150609_101336.jpg",
+    "20150609_101433.jpg",
+    "20150609_101501.jpg",
+    "20150609_101536.jpg",
+    "20150609_101540.jpg",
+    "20150609_101552.jpg",
+    "20150609_101612.jpg",
+    "20160527_131702.jpg"
+    /*
+    "IMG_2219.jpg",
+    "IMG_4623.JPG",
+    "IMG_4636.JPG",
+    "IMG_4640.JPG",
+    "IMG_4646.JPG",
+    "IMG_4647.JPG",
+    "IMG_4648.JPG",
+    "IMG_4650.JPG",
+    "IMG_4651.JPG",
+    "IMG_4652.JPG",
+    "IMG_4654.JPG",
+    */
+  ]
 
   function preparePage() {
     hideMainContent();
@@ -14,46 +49,19 @@
   function preLoadImages() {
     preLoader.on("complete", handlePreLoadComplete);
     preLoader.on("progress", handlePreLoadProgress);
-    loadImagesToPreloader(preLoader);
+    preLoader.on("fileload", handlePreLoadRender);
+    loadImagesToPreloader();
   }
 
-  function loadImagesToPreloader(loader) {
-    loader.loadFile("/img/pics/20150307_192018.jpg");
-    loader.loadFile("/img/pics/20150307_192056.jpg");
-    loader.loadFile("/img/pics/20150307_192111.jpg");
-    loader.loadFile("/img/pics/20150307_192141.jpg");
-    loader.loadFile("/img/pics/20150307_192316.jpg");
-    loader.loadFile("/img/pics/20150307_192352.jpg");
-    loader.loadFile("/img/pics/20150307_192626.jpg");
-    loader.loadFile("/img/pics/20150609_101307.jpg");
-    loader.loadFile("/img/pics/20150609_101324.jpg");
-    
-    loader.loadFile("/img/pics/20150609_101336.jpg");
-    loader.loadFile("/img/pics/20150609_101433.jpg");
-    loader.loadFile("/img/pics/20150609_101501.jpg");
-    loader.loadFile("/img/pics/20150609_101536.jpg");
-    loader.loadFile("/img/pics/20150609_101540.jpg");
-    loader.loadFile("/img/pics/20150609_101552.jpg");
-    loader.loadFile("/img/pics/20150609_101612.jpg");
-    loader.loadFile("/img/pics/20160527_131702.jpg");
-    /*
-    loader.loadFile("/img/pics/IMG_2219.jpg");
-    loader.loadFile("/img/pics/IMG_4623.JPG");
-    loader.loadFile("/img/pics/IMG_4636.JPG");
-    loader.loadFile("/img/pics/IMG_4640.JPG");
-    loader.loadFile("/img/pics/IMG_4646.JPG");
-    loader.loadFile("/img/pics/IMG_4647.JPG");
-    loader.loadFile("/img/pics/IMG_4648.JPG");
-    loader.loadFile("/img/pics/IMG_4650.JPG");
-    loader.loadFile("/img/pics/IMG_4651.JPG");
-    loader.loadFile("/img/pics/IMG_4652.JPG");
-    loader.loadFile("/img/pics/IMG_4654.JPG");
-    */
+  function loadImagesToPreloader() {
+    i.filter(function (img) {
+      preLoader.loadFile(IMG_DIR + img);
+    });
   }
 
   function handlePreLoadComplete(event) {
 
-    loadImagesToGallery();
+    //    loadImagesToGallery();
     slideImagesToCenter();
 
     animateProgressBarTo(100);
@@ -64,7 +72,12 @@
   }
 
   function handlePreLoadProgress(event) {
-    animateProgressBarTo(Math.round(event.progress * 95));
+    animateProgressBarTo(Math.round(event.progress * 100));
+  }
+
+  function handlePreLoadRender(event) {
+    loadImageToGallery(event);
+    handlePreLoadProgress(event) 
   }
 
   function animateProgressBarTo(percentage) {
@@ -78,34 +91,30 @@
     $(".gallery-images").css('left', '0%');
   }
 
-  function loadImagesToGallery() {
-    console.log("gonan do some magic");
-    var items = preLoader.getItems();
-    preLoader.getItems(true).filter(function (item) {
-      var wrap = $("<div class=\"gallery-images slide-horizontally relative dib ma0 pa0 w-50 w-third-m w-25-ns\"></li>");
-      var grid = $("<div class=\"aspect-ratio aspect-ratio--16x9\"></li>");
-      var main = $("<div class=\"db bg-center cover aspect-ratio--object\"></li>");
-      wrap.append(grid.append(main));
+  function loadImageToGallery(image) {
+    var wrap = $("<div class=\"gallery-images slide-horizontally relative dib ma0 pa0 w-50 w-third-m w-25-ns\"></li>");
+    var grid = $("<div class=\"aspect-ratio aspect-ratio--16x9\"></li>");
+    var main = $("<div class=\"db bg-center cover aspect-ratio--object\"></li>");
+    wrap.append(grid.append(main));
 
-      var sqr = Math.sqrt(items.count);
-      var randomInt = Math.round((Math.random() + 1).toFixed(2) * 100);
-      if (randomInt % 2 == 0) {
-        wrap.css('left', -randomInt + '%');
-      } else {
-        wrap.css('right', -randomInt + '%');
-      }
-      var randomDuration = (Math.random() + 0.2).toFixed(2);
-      wrap.attr('data-i', randomInt);
-      wrap.attr('data-d', randomDuration);
-      wrap.css('transition-duration', randomDuration + 's');
-      main.css('background-image', 'url("' + item.result.src + '")');
-      $("#project-gallery").append(wrap);
-    });
+    /*
+    var randomInt = Math.round((Math.random() + 1).toFixed(2) * 100);
+    if (randomInt % 2 == 0) {
+      wrap.css('left', -randomInt + '%');
+    } else {
+      wrap.css('right', -randomInt + '%');
+    }
+    var randomDuration = (Math.random() + 0.2).toFixed(2);
+    wrap.attr('data-i', randomInt);
+    wrap.attr('data-d', randomDuration);
+    wrap.css('transition-duration', randomDuration + 's');
+    */
+    main.css('background-image', 'url("' + image.result.src + '")');
+    $("#project-gallery").append(wrap);
   }
 
   function addEventListenerToElements() {
     $("#nav-container").click(function () {
-      console.log(m);
       if (!m) {
         $("#navigation").addClass("right-0");
         $("#navigation").removeClass("right--100");
