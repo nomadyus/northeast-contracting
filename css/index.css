@@ -257,3 +257,24 @@
 .menu--opened:hover .bottom-bar {
   animation: rotate-bottom-bar 0.7s linear 0.5s;
 }
+
+.footer-image-bg {
+  position: relative;
+}
+.footer-image-bg:after {
+  content: "";
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-image: url(../img/logo/skyline-outline-star.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.resize-none {
+  resize: none;
+}
