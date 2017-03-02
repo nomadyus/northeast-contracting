@@ -131,10 +131,6 @@
   z-index: 600;
 }
 
-.sixth-layer {
-  z-index: 500;
-}
-
 .mw-80 {
   max-width: 80%;
 }
@@ -277,4 +273,8 @@
 
 .resize-none {
   resize: none;
+}
+
+.pre-footer-section {
+  margin-bottom: 70vh;
 }
