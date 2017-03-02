@@ -23,7 +23,7 @@
     "20150609_101552.jpg",
     "20150609_101612.jpg",
     "20160527_131702.jpg"
-    /*
+    ,
     "IMG_2219.jpg",
     "IMG_4623.JPG",
     "IMG_4636.JPG",
@@ -34,11 +34,11 @@
     "IMG_4650.JPG",
     "IMG_4651.JPG",
     "IMG_4652.JPG",
-    "IMG_4654.JPG",
-    */
+    "IMG_4654.JPG"
+
   ];
   var m = false;
-  var l = [];
+  var l = 0;
 
   function preparePage() {
     hideMainContent();
@@ -49,7 +49,6 @@
 
   function preLoadImages() {
     preLoader.on("complete", handlePreLoadComplete);
-    preLoader.on("progress", handlePreLoadProgress);
     preLoader.on("fileload", handlePreLoadRender);
     loadImagesToPreloader();
   }
@@ -61,24 +60,28 @@
   }
 
   function handlePreLoadComplete(event) {
+    var t = setInterval(function () {
+      if (i.length == l) {
+        slideImagesToCenter();
 
-    //    loadImagesToGallery();
-    slideImagesToCenter();
+        animateProgressBarTo(100);
+        hideLoadingBar();
+        slideLoaderOverlayDown();
+        slideInHeader();
+        showMainContent();
 
-    animateProgressBarTo(100);
-    hideLoadingBar();
-    slideLoaderOverlayDown();
-    slideInHeader();
-    showMainContent();
+        clearInterval(t);
+      }
+    }, 150);
   }
 
   function handlePreLoadProgress(event) {
-    animateProgressBarTo(Math.round(event.progress * 100));
+    animateProgressBarTo(Math.round(l / i.length * 90));
   }
 
   function handlePreLoadRender(event) {
     loadImageToGallery(event);
-    handlePreLoadProgress(event)
+    handlePreLoadProgress(event);
   }
 
   function animateProgressBarTo(percentage) {
@@ -111,12 +114,12 @@
       grid.attr('data-d', randomDuration);
       grid.css('transition-duration', randomDuration + 's');
       setTimeout(function () {
-        console.log(grid);
         grid.css('transform', 'translateX(0%)');
       }, randomDuration);
     }
 
     $("#project-gallery").append(wrap);
+    l++;
   }
 
   function addEventListenerToElements() {
@@ -166,7 +169,7 @@
       $("#loader").removeClass("dt");
       $("#loader").addClass("dn");
       $("#main-container").removeClass("overflow-hidden");
-    }, 1750);
+    }, 1859);
   }
 
   function showScrollArrow() {
@@ -176,4 +179,4 @@
   function slideInHeader() {
     $("#header").removeClass("out-of-top-frame");
   }
-})();
+})();                                            
