@@ -257,6 +257,7 @@
 .footer-image-bg {
   position: relative;
 }
+
 .footer-image-bg:after {
   content: "";
   opacity: 0.15;
@@ -271,10 +272,22 @@
   background-size: cover;
 }
 
+.translate-y--100 {
+  transform: translateY(-100%);
+}
+
 .resize-none {
   resize: none;
 }
 
-.pre-footer-section {
+.mb-70vh {
   margin-bottom: 70vh;
+}
+
+.mt-100vh {
+  margin-top: 100vh;
+}
+
+.scale-logo {
+  transform: scale(1.3);
 }
