@@ -280,14 +280,6 @@
   resize: none;
 }
 
-.mb-70vh {
-  margin-bottom: 70vh;
-}
-
 .mt-100vh {
   margin-top: 100vh;
-}
-
-.scale-logo {
-  transform: scale(1.3);
 }
