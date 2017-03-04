@@ -137,6 +137,16 @@
       }
       m = !m;
     });
+    $("#submit-contact-form").click(function() {
+      console.log($("#message").val());
+      console.log($("#email-address").val());
+      console.log($("#constact-us").contents());
+      $.ajax({
+        url: "/p/p.php?email=" + $("#email-address").val() + "&msg=" + $("#message").val() 
+      }).done(function(data){
+        console.log(data);
+      });
+    })
   }
 
   function showLoader() {
