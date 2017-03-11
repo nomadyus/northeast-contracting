@@ -2,7 +2,7 @@
   $(document).ready(preparePage);
 
   const preLoader = new createjs.LoadQueue();
-  const IMG_DIR = "/img/pics/";
+  const IMG_DIR = "/img/proj/";
   const g = false;
   const i = [
     "20150307_192018.jpg",
