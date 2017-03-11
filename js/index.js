@@ -25,16 +25,16 @@
     "20160527_131702.jpg"
     ,
     "IMG_2219.jpg",
-    "IMG_4623.JPG",
-    "IMG_4636.JPG",
-    "IMG_4640.JPG",
-    "IMG_4646.JPG",
-    "IMG_4647.JPG",
-    "IMG_4648.JPG",
-    "IMG_4650.JPG",
-    "IMG_4651.JPG",
-    "IMG_4652.JPG",
-    "IMG_4654.JPG"
+    "IMG_4623.jpg",
+    "IMG_4636.jpg",
+    "IMG_4640.jpg",
+    "IMG_4646.jpg",
+    "IMG_4647.jpg",
+    "IMG_4648.jpg",
+    "IMG_4650.jpg",
+    "IMG_4651.jpg",
+    "IMG_4652.jpg",
+    "IMG_4654.jpg"
 
   ];
   var m = false;
