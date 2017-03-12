@@ -99,7 +99,7 @@
     var wrap = $("<div class=\"gallery-images overflow-hidden relative dib ma0 pa0 w-50 w-third-m w-25-ns\"></li>");
     var grid = $("<div class=\"aspect-ratio transform-horizontally aspect-ratio--16x9\"></li>");
     var main = $("<div class=\"db bg-center cover aspect-ratio--object\"></li>");
-    main.css('background-image', 'url("' + image.result.src + '")');
+    main.css('background-image', 'url("' + image.item.src + '")');
     wrap.append(grid.append(main));
 
     if (g) {
@@ -137,16 +137,42 @@
       }
       m = !m;
     });
-    $("#submit-contact-form").click(function() {
-      console.log($("#message").val());
-      console.log($("#email-address").val());
-      console.log($("#constact-us").contents());
-      $.ajax({
-        url: "/p/p.php?email=" + $("#email-address").val() + "&msg=" + $("#message").val() 
-      }).done(function(data){
-        console.log(data);
-      });
-    })
+    $("#submit-contact-form").click(function () {
+      if ($("#message").val() != "" && $("#email-address").val() != "") {
+        console.log($("#constact-us").contents());
+
+        const contactData = {
+          email: $("#email-address").val(),
+          message: $("#message").val()
+        }
+        console.log(contactData);
+        $.ajax({
+          url: "/p/p.php",
+          type: "POST",
+          data: contactData
+        }).done(function (data) {
+          console.log(data);
+        }).fail(function (a, b, c) {
+          showContactFormError()
+        });
+      } else {
+        showContactFormError();
+      }
+    });
+
+    $("input").focus(function () {
+      removeContactFormError()
+    });
+
+  }
+
+  function showContactFormError() {
+    $("#email-address").addClass('b--red');
+    $("#message").addClass('b--red');
+  }
+
+  function removeContactFormError() {
+    $(".b--red").removeClass("b--red");
   }
 
   function showLoader() {
@@ -189,4 +215,4 @@
   function slideInHeader() {
     $("#header").removeClass("out-of-top-frame");
   }
-})();                                            
+})();
