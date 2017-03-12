@@ -149,11 +149,12 @@
         $.ajax({
           url: "/p/p.php",
           type: "POST",
-          data: contactData
+          data: contactData,
+          dataType: 'json'
         }).done(function (data) {
           console.log(data);
         }).fail(function (a, b, c) {
-          showContactFormError()
+          showContactFormError();
         });
       } else {
         showContactFormError();
