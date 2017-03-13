@@ -96,9 +96,9 @@
   }
 
   function loadImageToGallery(image) {
-    var wrap = $("<div class=\"gallery-images overflow-hidden relative dib ma0 pa0 w-50 w-third-m w-25-ns\"></li>");
-    var grid = $("<div class=\"aspect-ratio transform-horizontally aspect-ratio--16x9\"></li>");
-    var main = $("<div class=\"db bg-center cover aspect-ratio--object\"></li>");
+    var wrap = $("<div class=\"gallery-images overflow-hidden relative dib ma0 pa0 w-50 w-third-m w-25-ns\"></div>");
+    var grid = $("<div class=\"aspect-ratio transform-horizontally aspect-ratio--16x9\"></div>");
+    var main = $("<div class=\"db bg-center cover aspect-ratio--object\"></div>");
     main.css('background-image', 'url("' + image.item.src + '")');
     wrap.append(grid.append(main));
 
