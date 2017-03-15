@@ -169,7 +169,9 @@
   }
 
   function clearContactForm() {
-    console.log($("#constact-us").contents());
+    $("#contact-us").empty();
+    $("#contact-us").append($("<p class=\"f3 fw4 ph0 mh0 tc\">Thank you</p>"));
+    $("#contact-us").append($("<p class=\"tc center\">Your message has been sent.</p>"));
   }
 
   function showContactFormError() {
