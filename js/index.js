@@ -139,8 +139,6 @@
     });
     $("#submit-contact-form").click(function () {
       if ($("#message").val() != "" && $("#email-address").val() != "") {
-        console.log($("#constact-us").contents());
-
         const contactData = {
           email: $("#email-address").val(),
           message: $("#message").val()
@@ -152,7 +150,11 @@
           data: contactData,
           dataType: 'json'
         }).done(function (data) {
-          console.log(data);
+          if (data.sent) {
+            clearContactForm()
+          } else {
+            showContactFormError();
+          }
         }).fail(function (a, b, c) {
           showContactFormError();
         });
@@ -164,7 +166,10 @@
     $("input").focus(function () {
       removeContactFormError()
     });
+  }
 
+  function clearContactForm() {
+    console.log($("#constact-us").contents());
   }
 
   function showContactFormError() {
