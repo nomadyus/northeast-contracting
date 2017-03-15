@@ -143,7 +143,6 @@
           email: $("#email-address").val(),
           message: $("#message").val()
         }
-        console.log(contactData);
         $.ajax({
           url: "/p/p.php",
           type: "POST",
