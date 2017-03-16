@@ -37,6 +37,7 @@
     "IMG_4654.jpg"
 
   ];
+  var s = false;
   var m = false;
   var l = 0;
 
@@ -45,6 +46,7 @@
     showLoader();
     preLoadImages();
     addEventListenerToElements();
+    addSrollEventListenerToPage();
   }
 
   function preLoadImages() {
@@ -164,6 +166,16 @@
 
     $("input").focus(function () {
       removeContactFormError()
+    });
+  }
+
+  function addSrollEventListenerToPage() {
+    $(document).on("scroll", function () {
+      if ($(document).scrollTop() >= ($(window).height() - $("#header").height())) {
+        $("#header").addClass("bg-white shadow-3");
+      } else {
+        $("#header").removeClass("bg-white shadow-3");
+      }
     });
   }
 
