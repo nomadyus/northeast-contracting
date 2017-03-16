@@ -46,7 +46,7 @@
     showLoader();
     preLoadImages();
     addEventListenerToElements();
-    addSrollEventListenerToPage();
+    addScrollEventListenerToPage();
   }
 
   function preLoadImages() {
@@ -169,7 +169,7 @@
     });
   }
 
-  function addSrollEventListenerToPage() {
+  function addScrollEventListenerToPage() {
     $(document).on("scroll", function () {
       if ($(document).scrollTop() >= ($(window).height() - $("#header").height())) {
         $("#header").addClass("bg-white shadow-3");
