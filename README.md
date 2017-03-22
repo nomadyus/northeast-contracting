@@ -1,5 +1,5 @@
 # Northeast General Contracting inc.
-A simple HTML5, JS, and CSS site for the Northeast General Contracting Inc. company
+A simple HTML5, JS, and CSS site for Northeast General Contracting Inc. at [northeastcontracting.ca](http://northeastcontracting.ca/)
 
 ## Requirements
 - [browser-sync v2.18.8](https://browsersync.io/#install)
